@@ -8,7 +8,7 @@ Static proof of concept for the Connect the Doc Apps marketplace.
 - `t2.html` — banner focused marketplace layout and preferred concept
 - `t3.html` — marketplace layout with featured apps and navigation sidebar
 
-The root `index.html` opens `t2.html` by default.
+The root `index.html` introduces the three early concepts and links to each version. It clearly identifies the work as an internal design exploration rather than final product behavior.
 
 ## Local preview
 
