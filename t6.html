@@ -199,13 +199,12 @@
       .search { width:100%; }
       .catalog-heading { padding:20px; }
       .side-nav { display:block; padding:18px 20px; }
-      .side-group:first-child { margin:0 0 12px; padding-bottom:12px; }
-      .side-group:first-child div { display:flex; gap:6px; overflow-x:auto; }
-      .side-group:first-child .side-link { min-width:max-content; padding:0 12px; border:1px solid var(--line); background:#fff; }
-      .side-group:nth-child(2) { display:none; }
-      .side-group:nth-child(3) { margin:0; border:0; }
-      .side-group:nth-child(3) div { display:flex; gap:6px; overflow-x:auto; }
-      .side-group:nth-child(3) .side-link { min-width:max-content; padding:0 12px; border:1px solid var(--line); background:#fff; }
+      .side-group.my-apps { margin:0 0 12px; padding-bottom:12px; }
+      .side-group.my-apps div { display:flex; gap:6px; overflow-x:auto; }
+      .side-group.my-apps .side-link { min-width:max-content; padding:0 12px; border:1px solid var(--line); background:#fff; }
+      .side-group[aria-label="Apps by category"] { margin:0; border:0; }
+      .side-group[aria-label="Apps by category"] div { display:flex; gap:6px; overflow-x:auto; }
+      .side-group[aria-label="Apps by category"] .side-link { min-width:max-content; padding:0 12px; border:1px solid var(--line); background:#fff; }
       .app-section { min-height:680px; padding:42px 21px 8px; }
       .app-section h3 { font-size:38px; }
       .app-description { font-size:14px; }
@@ -589,7 +588,6 @@
         <aside class="side-nav" aria-label="Apps navigation">
           <label class="search side-search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input type="search" placeholder="Search apps" aria-label="Search apps"></label>
           <nav class="side-group my-apps" aria-label="My Apps"><h2>My Apps</h2><div><a class="side-link" href="#smile-board">Smile Board <span>Installed</span></a><a class="side-link" href="#qr-codes">QR Codes <span>Installed</span></a></div></nav>
-          <nav class="side-group" aria-label="Explore all apps"><h2>Explore all apps</h2><div><a class="side-link active" href="#smile-studio">Smile Studio <span>Demo</span></a><a class="side-link" href="#smile-board">Smile Board <span>Enabled</span></a><a class="side-link" href="#qr-codes">QR Codes <span>Enabled</span></a><a class="side-link" href="#review-badges">Review Badges <span>Add</span></a><a class="side-link" href="#announcements">Announcement Banners <span>Add</span></a><a class="side-link" href="#organization-dashboard">Organization Dashboard <span>Demo</span></a><a class="side-link" href="#ctd-ai">CTD AI <span>Demo</span></a></div></nav>
           <nav class="side-group" aria-label="Apps by category"><h2>Apps by category</h2><div><a class="side-link" href="#smile-studio">Patient Tools <span>3</span></a><a class="side-link" href="#organization-dashboard">Dashboards <span>1</span></a><a class="side-link" href="#ctd-ai">Marketing <span>1</span></a><a class="side-link" href="#review-badges">Reviews <span>1</span></a><a class="side-link" href="#announcements">Communication <span>1</span></a></div></nav>
           <a class="side-suggest" href="#"><small>Have an idea?</small><strong>Suggest an App</strong><p>Tell us what would make CTD more useful for your clinic.</p><span>Share your idea →</span></a>
         </aside>
